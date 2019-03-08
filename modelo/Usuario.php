@@ -56,6 +56,7 @@
             return $this->cp;
         }
 
+        //Comprobacion de acceso a la pagina(login)
         public static function validar(){
 
             if(isset($_GET["nombre"]) && isset($_GET["password"])){
@@ -73,18 +74,22 @@
                 session_start();
             
                 if ($resultado!== false) {
+
+                    //Usuario normal de la aplicacion
                     if($nombre !== "admin"){
                         $_SESSION["nombre"]=$nombre;
-                        header("Location: index.php?mod=producto&ope=principal");
+                        header("Location: controlador.php?mod=producto&ope=principal");
                         
                     }else{
+                    //Administrador de la aplicacion
+                    
                         $_SESSION["nombre"]=$nombre;
-                        header("Location: index.php?mod=producto&ope=index");
-                        //echo "admin";
+                        header("Location: controlador.php?mod=producto&ope=index");
                     }
                     
                     
                 }else{
+                //Redireccion al formulario de logue si no concuerda los datos con la bd
                     require_once "vista/index.login.php";
                     echo "El nombre o la contraseña no es correcta";
                 
@@ -94,7 +99,7 @@
             }
         }
 
-
+        //Registro de un nuevo usuario
         public function nuevoUsuario(){
             $db = Database::getInstance();
             $db->doQuery("INSERT INTO usuario(nombre,password,telefono,direccion,cp) VALUES (:nombre,:password,:telefono,:direccion,:cp);",

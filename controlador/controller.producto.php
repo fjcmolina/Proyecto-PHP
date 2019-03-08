@@ -8,11 +8,14 @@
 
         }
 
+        //Pagina del usuario normal
         public function index() {
             $datos = Producto::listarProductos() ;
             require_once "vista/index.producto.php";
 
         }
+
+        //Pagina del administrador
         public function principal() {
             $datos = Producto::listarProductos() ;
             require_once "vista/index.principal.php";
@@ -25,20 +28,21 @@
                 Producto::borrar($_GET["idProducto"]);
             }
 
-            header("Location: index.php?mod=producto&ope=index");
+            header("Location: controlador.php?mod=producto&ope=index");
         }
         
 
         public function crear(){
 
             if (isset($_GET["nombre"])) {
+                
                 $producto = new Producto();
               
                 $producto->setNombre($_GET["nombre"]);
                 $producto->setPrecio($_GET["precio"]);
                 $producto->crearProducto();
                 
-                header ("Location: index.php?mod=producto&ope=index");
+                header ("Location: controlador.php?mod=producto&ope=index");
            } else {
                 require_once "vista/crear.producto.php";
            }
@@ -58,9 +62,10 @@
                     $producto->update();
 
                     
-                    header("location: index.php?mod=producto&ope=index");
+                    header("location: controlador.php?mod=producto&ope=index");
                     
                 }else{
+                    //Muestra los valores que ya tiene en la bd
                     $nombre = $producto->getNombre();
                     $precio = $producto->getPrecio();
                     require_once "vista/update.producto.php";
@@ -68,7 +73,7 @@
 
             }else{
                
-               header("location: index.php?mod=producto&ope=index");
+               header("location: controlador.php?mod=producto&ope=index");
             }
 
             

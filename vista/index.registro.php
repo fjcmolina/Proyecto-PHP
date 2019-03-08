@@ -11,7 +11,7 @@
   <div class="registro">
     <h1>Registro de Usuario</h1>
 
-    <form action="index.php" method="get" >
+    <form action="controlador.php" method="get" >
 
         <input type="hidden" name="mod" value="usuario"/>
         <input type="hidden" name="ope" value="insertar"/>

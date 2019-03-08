@@ -13,7 +13,7 @@
 
         <h1>Editar producto</h1>
 
-        <form action="index.php" method="get">
+        <form action="controlador.php" method="get">
 
             <input type="hidden" name="mod" value="producto" />
             <input type="hidden" name="ope" value="update" />

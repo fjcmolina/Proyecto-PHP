@@ -2,8 +2,9 @@
 
     session_start();
 
+    //Si la session no esta activa nos redirecciona al login
     if (!isset($_SESSION["nombre"])){
-        header("location: index.php");
+        header("location: controlador.php");
     }
 ?>
 <!DOCTYPE html>
@@ -19,9 +20,9 @@
 
 <body>
     <ul>
-        <li><a href="index.php?mod=producto&ope=principal">Producto</a></li>
-        <li><a href="index.php?mod=carrito&ope=index">Carrito</a></li>
-        <li><a href="index.php?mod=usuario&ope=cerrar">Cerrar Sesion</a></li>
+        <li><a href="controlador.php?mod=producto&ope=principal">Producto</a></li>
+        <li><a href="controlador.php?mod=carrito&ope=index">Carrito</a></li>
+        <li><a href="controlador.php?mod=usuario&ope=cerrar">Cerrar Sesion</a></li>
     </ul>
 
     <h1>Lista de Productos</h1>
@@ -46,7 +47,7 @@
             <td><?=$item->getFoto();?> </td>
 
           
-           <td><a href="index.php?mod=carrito&ope=insertar&idProducto=<?=$item->getIdProducto();?>"> Añadir al Carrito</a></td>
+           <td><a href="controlador.php?mod=carrito&ope=insertar&idProducto=<?=$item->getIdProducto();?>"> Añadir al Carrito</a></td>
         </tr>
         
 

@@ -69,6 +69,7 @@
             return $datos;
         }
 
+        //Obtenemos un producto mediante su id
         public static function getProducto($idProducto){
 
             $db = Database::getInstance();
@@ -78,6 +79,8 @@
             return $db ->getRow("Producto");
     
         }
+
+        //Creacion del nuevo producto
          public function crearProducto(){
             $db = Database::getInstance();
             $db->doQuery("INSERT INTO producto(nombre,precio) VALUES (:nombre,:precio);",
@@ -85,12 +88,14 @@
                         "precio"=>$this->precio]);
         }
 
+        //Borrar el producto
         public function borrar($idProducto){
             $db = Database::getInstance();
             $db->doQuery("DELETE FROM producto WHERE idProducto=:idProducto;",
                         [":idProducto"=> $idProducto]);
         }
 
+        //Actualizar el producto
         public function update(){
             $db = Database::getInstance();
             $db->doQuery("UPDATE producto SET  precio=:precio WHERE idProducto=:idProducto;",

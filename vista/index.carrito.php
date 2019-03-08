@@ -11,9 +11,9 @@
 <body>
 
     <ul>
-        <li> <a href="index.php?mod=producto&ope=principal">Producto</a></li>
-        <li> <a href="index.php?mod=carrito&ope=index">Carrito</a></li>
-        <li><a href="index.php?mod=usuario&ope=cerrar">Cerrar Sesion</a></li>
+        <li> <a href="controlador.php?mod=producto&ope=principal">Producto</a></li>
+        <li> <a href="controlador.php?mod=carrito&ope=index">Carrito</a></li>
+        <li><a href="controlador.php?mod=usuario&ope=cerrar">Cerrar Sesion</a></li>
     </ul>
 
     <h1>Carrito</h1>
@@ -34,7 +34,7 @@
             <td><?=$item->getPrecio();?> </td>
             <td><?=$item->getCantidad();?> </td>
             
-            <td> <a href="index.php?mod=carrito&ope=delete&idProducto=<?=$item->getIdProducto();?>" >Borrar</a></td>
+            <td> <a href="controlador.php?mod=carrito&ope=delete&idProducto=<?=$item->getIdProducto();?>" >Borrar</a></td>
            
         </tr>
     <?php       

@@ -20,7 +20,7 @@
                 Carrito::insertarCarrito($_GET["idProducto"]);
             }
 
-            header("Location: index.php?mod=carrito&ope=index");
+            header("Location: controlador.php?mod=carrito&ope=index");
         }
 
         public function delete(){
@@ -29,7 +29,7 @@
                 Carrito::borrar($_GET["idProducto"]);
             }
 
-            header("Location: index.php?mod=carrito&ope=index");
+            header("Location: controlador.php?mod=carrito&ope=index");
         }
     }
 ?>

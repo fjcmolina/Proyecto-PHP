@@ -22,11 +22,14 @@
             require_once "vista/index.registro.php";
         }
 
+        //Cerrar la session que este iniciada
         public function cerrar(){
+
             session_start();
             session_unset();
             session_destroy();
-            header("Location: index.php?mod=usuario&ope=index");
+
+            header("Location: /Actividades/Pruebas PHP/Remo");
         }
 
         public function insertar(){
@@ -42,7 +45,7 @@
                 
                 $usuario->nuevoUSuario();
                 
-                header ("Location: index.php?mod=usuario&ope=index");
+                header ("Location: controlador.php?mod=usuario&ope=index");
            } else {
                 require_once "vista/index.registro.php";
            }

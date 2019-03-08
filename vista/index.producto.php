@@ -2,8 +2,9 @@
 
     session_start();
 
+    //Si la session no esta activa nos redirecciona al login
     if (!isset($_SESSION["nombre"])){
-        header("location: index.php");
+        header("location: controlador.php");
     }
 ?>
 <!DOCTYPE html>
@@ -20,8 +21,8 @@
 <body>
 
     <ul>
-        <li><a href="index.php?mod=producto&ope=crear">Crear nuevo Producto</a></li>
-        <li><a href="index.php?mod=usuario&ope=cerrar">Cerrar Sesion</a></li>
+        <li><a href="controlador.php?mod=producto&ope=crear">Crear nuevo Producto</a></li>
+        <li><a href="controlador.php?mod=usuario&ope=cerrar">Cerrar Sesion</a></li>
     </ul>
     
     <h1>Panel de administrador</h1>
@@ -44,8 +45,8 @@
             <td><?=$item->getDescripcion();?> </td>
             <td><?=$item->getFoto();?> </td>
 
-            <td> <a href="index.php?mod=producto&ope=delete&idProducto=<?=$item->getIdProducto();?>"> Borrar</a></td>
-            <td> <a href="index.php?mod=producto&ope=update&idProducto=<?=$item->getIdProducto();?>"> Editar</a></td>
+            <td> <a href="controlador.php?mod=producto&ope=delete&idProducto=<?=$item->getIdProducto();?>"> Borrar</a></td>
+            <td> <a href="controlador.php?mod=producto&ope=update&idProducto=<?=$item->getIdProducto();?>"> Editar</a></td>
             
         </tr>
 

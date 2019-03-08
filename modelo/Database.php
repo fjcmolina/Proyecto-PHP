@@ -2,10 +2,10 @@
 	class Database
 	{
 		// Atributos
-		private $dbHost = "localhost" 	 ;
-		private $dbUser = "root"	  	 ;
-		private $dbPass = ""		  	 ;
-		private $dbName = "tienda_remo"		  	 ;
+		private $dbHost = "sql309.epizy.com" 	 ;
+		private $dbUser = "epiz_23552532"	  	 ;
+		private $dbPass = "JuPRRpwhG"		  	 ;
+		private $dbName = "epiz_23552532_remo"		  	 ;
 
 		//
 		private static $prp = null	  	 ;
