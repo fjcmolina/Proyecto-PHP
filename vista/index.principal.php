@@ -1,12 +1,3 @@
-<?php  
-
-    session_start();
-
-    //Si la session no esta activa nos redirecciona al login
-    if (!isset($_SESSION["nombre"])){
-        header("location: controlador.php");
-    }
-?>
 <!DOCTYPE html>
 <html>
 <head>

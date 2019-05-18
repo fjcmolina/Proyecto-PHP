@@ -1,23 +1,3 @@
-<?php  
-	
-	session_start();
-
-	$nombre = $_SESSION["nombre"];
-	
-	//Redirecciona a la vista del usuario normal
-	if($nombre !== "admin"){
-		if (isset($nombre)){
-			header("Location: controlador.php?mod=producto&ope=principal");
-		}
-	}else{
-	//Redirecciona a la vista del administrador
-		if (isset($nombre)){
-			header("Location: controlador.php?mod=producto&ope=index");
-		}
-	}
-
-?>
-
 <!DOCTYPE html>
 <html>
 <head>

@@ -34,7 +34,7 @@
             <td><?=$item->getPrecio();?> </td>
             <td><?=$item->getCantidad();?> </td>
             
-            <td> <a href="controlador.php?mod=carrito&ope=delete&idProducto=<?=$item->getIdProducto();?>" >Borrar</a></td>
+            <td> <a href="controlador.php?mod=carrito&ope=delete&idProducto=<?=$item->getIdProducto();?>" >Borrar</a> </td>
            
         </tr>
     <?php       

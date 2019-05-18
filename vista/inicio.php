@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -59,8 +58,8 @@
 
   <section class="page-section clearfix">
     <div class="container">
+    <video src="regata.mp4" autoplay loop width="100%"></video>
     
-        
       <div class="fb-page" data-href="https://www.facebook.com/CDRemoLaArana/" data-tabs="timeline,events" data-small-header="false" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="false">
 
         <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FCDRemoLaArana%2F&tabs=timeline,events&width=500&height=1000&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=false&appId=389970004882002" width="500" height="700" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
@@ -85,3 +84,4 @@
 </body>
 
 </html>
+*/

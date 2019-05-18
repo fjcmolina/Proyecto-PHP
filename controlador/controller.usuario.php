@@ -6,7 +6,24 @@
 
 
         public function __construct(){
-            $this->sesion = new Usuario() ;
+
+            session_start();
+            
+            if(isset($_SESSION["nombre"])){
+                $nombre = $_SESSION["nombre"];
+                
+                //Redirecciona a la vista del usuario normal
+                if($nombre !== "admin"){
+                    if (isset($nombre)){
+                        header("Location: controlador.php?mod=producto&ope=principal");
+                    }
+                }else{
+                //Redirecciona a la vista del administrador
+                    if (isset($nombre)){
+                        header("Location: controlador.php?mod=producto&ope=index");
+                    }
+                }
+            }
         }
      
         public function index(){
@@ -29,7 +46,7 @@
             session_unset();
             session_destroy();
 
-            header("Location: /Actividades/Pruebas PHP/Remo");
+            header("Location: index.php");
         }
 
         public function insertar(){

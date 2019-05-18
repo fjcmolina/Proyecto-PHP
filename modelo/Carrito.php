@@ -51,11 +51,11 @@
             return $datos;
         }
 
-        public static function insertarCarrito($idProducto){
+        public function insertarCarrito($idProducto){
             $db = Database::getInstance();
             $db ->doQuery("INSERT INTO carrito(nombre,precio) VALUES (:nombre,:precio) WHERE idProducto=:idProducto;",
-                            [":nombre"=>$this->nombre,
-                            ":precio"=>$this->precio,
+                            [":nombre"=>$nombre,
+                            ":precio"=>$precio,
                             "idProducto"=>$idProducto]);
         }
 
