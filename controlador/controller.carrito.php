@@ -17,7 +17,7 @@
         public function insertar(){
 
             if(isset($_GET["idProducto"])){
-                Carrito::insertarCarrito($_GET["idProducto"]);
+                Carrito::insertarCarrito($_GET["idProducto"],$_GET["idUsuario"]);
             }
 
             header("Location: controlador.php?mod=carrito&ope=index");

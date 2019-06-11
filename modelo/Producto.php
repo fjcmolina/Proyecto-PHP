@@ -85,7 +85,7 @@
             $db = Database::getInstance();
             $db->doQuery("INSERT INTO producto(nombre,precio) VALUES (:nombre,:precio);",
                         [":nombre"=>$this->nombre,
-                        "precio"=>$this->precio]);
+                        ":precio"=>$this->precio]);
         }
 
         //Borrar el producto

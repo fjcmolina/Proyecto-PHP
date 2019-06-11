@@ -9,6 +9,7 @@
         private $nombre;
         private $precio;
         private $cantidad;
+        private $idUsuario;
 
         public function __construct(){
 
@@ -25,6 +26,9 @@
         public function setCantidad($cantidad){
             $this->cantidad = $cantidad;
         }
+        public function setIdUsuario($idUsuario){
+            $this->idUsuario = $idUsuario;
+        }
 
         //GETTERS
         
@@ -37,11 +41,15 @@
         public function getCantidad(){
             return $this->cantidad;
         }
+        public function getIdUsuario(){
+            return $this->idUsuario;
+        }
 
         public static function listarCarrito(){
-            $db = Database::getInstance();
-            $db ->doQuery("SELECT *  FROM carrito");
 
+            $db = Database::getInstance();
+            $db ->doQuery("SELECT * FROM carrito");
+        
             $datos = [];
 
             while($item = $db->getRow("Carrito")){
@@ -51,13 +59,17 @@
             return $datos;
         }
 
-        public function insertarCarrito($idProducto){
+        public function insertarCarrito($idProducto,$idUsuario){
+            
             $db = Database::getInstance();
-            $db ->doQuery("INSERT INTO carrito(nombre,precio) VALUES (:nombre,:precio) WHERE idProducto=:idProducto;",
+            $db ->doQuery("INSERT INTO carrito(nombre,precio) VALUES (:nombre,:precio) WHERE idProducto=:idProducto and idUsuario=:idUsuario;",
                             [":nombre"=>$nombre,
                             ":precio"=>$precio,
-                            "idProducto"=>$idProducto]);
+                            ":idProducto"=> $idProducto,
+                            ":idUsuario"=> $idUsuario]);
+            var_dump($db);
         }
+
 
         public function borrar($idProducto){
             $db = Database::getInstance();
