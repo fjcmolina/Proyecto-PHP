@@ -59,7 +59,7 @@
             <a class="nav-link text-uppercase text-expanded" href="controlador.php">Tienda</a>
           </li>
           <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="vista/contacto.php">Contacto</a>
+            <a class="nav-link text-uppercase text-expanded" href="vista/galeria.php">Galeria</a>
           </li>
         </ul>
       </div>
@@ -69,7 +69,7 @@
   <section class="page-section clearfix">
     <div class="grid-container">
       <div class="grid-item">
-        <video src="regata.mp4" autoplay loop width="100%"></video>
+        <video src="img/regata.mp4" autoplay loop width="100%"></video>
       </div>
         
       <div class="grid-item">

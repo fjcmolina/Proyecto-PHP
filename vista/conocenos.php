@@ -48,7 +48,7 @@
             <a class="nav-link text-uppercase text-expanded" href="../controlador.php">Tienda</a>
           </li>
           <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="contacto.php">Contacto</a>
+            <a class="nav-link text-uppercase text-expanded" href="galeria.php">Galeria</a>
           </li>
         </ul>
       </div>
@@ -73,9 +73,43 @@
       </div>
     </div>
   </section>
-      
-    </div>
-  </section>
+ 
+  <section class="page-section cta">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-9 mx-auto">
+            <div class="cta-inner text-center rounded">
+              <h2 class="section-heading mb-5">
+                <span class="section-heading-lower">Historial en la Liga de Jábegas</span>
+              </h2>
+              <ul class="list-unstyled list-hours mb-5 text-left mx-auto">
+                <li class="list-unstyled-item list-hours-item d-flex">
+                  <h3>2009</h3>  Campeones de la Liga en 2009, en categoría sénior (con nuestro anterior club).  
+                </li>
+                <li class="list-unstyled-item list-hours-item d-flex">
+                  <h3>2015</h3>Campeones de la Liga en 2015, en categoría sénior (como “Asociación de Remo y Pala de Pedregalejo”).
+                </li>
+                <li class="list-unstyled-item list-hours-item d-flex">
+                  <h3>2016</h3>Campeones de la Liga en 2016, en categoría sénior. Invictos en las 15 regatas.
+                </li>
+                <li class="list-unstyled-item list-hours-item d-flex">
+                  <h3>2017</h3>Campeones de la Liga en 2017, en categoría sénior.
+                </li>
+                <li class="list-unstyled-item list-hours-item d-flex">
+                  <h3>2018</h3>Campeones de la Liga en 2018, en categoría sénior.
+                </li>
+                <li class="list-unstyled-item list-hours-item d-flex">
+                  <h3>2018</h3>Cuarto clasificado en 2018, en categoría veteranos.
+                </li>
+                <li class="list-unstyled-item list-hours-item d-flex">
+                  <h3>2018</h3>Cuarto clasificado en 2018, en categoría femenina.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
   
 

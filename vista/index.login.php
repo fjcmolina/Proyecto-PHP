@@ -7,14 +7,10 @@
 <body>
 	
 	<div class="login">
-
 		<h1>Login</h1>
-
 		<form action="controlador.php" method="GET">
-
 			<input type="hidden" name="mod" value="usuario"/>
 			<input type="hidden" name="ope" value="index"/>
-
 			<input type="text" placeholder="Usuario" name="nombre" required="required"/><br>
 			<input type="password" placeholder="Password" name="password" required="required"/><br>
 			<input type="submit" class="btn btn-primary btn-block btn-large" value="Iniciar Sesion"/>
