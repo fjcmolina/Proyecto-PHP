@@ -2,38 +2,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
-  <link rel="stylesheet" type="text/css" href="css/estilo_formulario.css">
+  <title>Registro</title>
+  <link rel="stylesheet" type="text/css" href="css/form.css">
+  <link href="css/business-casual.min.css" rel="stylesheet">
 </head>
 <body>
-  <br>
+  
+  <div class="wrapper fadeInDown">
+      <div id="formContent">
 
-  <div class="registro">
-    <h1>Registro de Usuario</h1>
+        <h1>Registro</h1>
 
-    <form action="controlador.php" method="get" >
+        <form action="controlador.php" method="GET">
 
-        <input type="hidden" name="mod" value="usuario"/>
-        <input type="hidden" name="ope" value="insertar"/>
+          <input type="hidden" name="mod" value="usuario"/>
+          <input type="hidden" name="ope" value="insertar"/>
 
-        <label for="nombre">Nombre</label>
-        <input type="text" name="nombre" placeholder="Nombre" required="required"><br>
+          <input type="text" class="fadeIn second" name="nombre" placeholder="Usuario" required>
+          <input type="password" class="fadeIn third" name="password" placeholder="Password" required>
+          <input type="text" class="fadeIn third" name="telefono" placeholder="Telefono">
+          <input type="text" class="fadeIn third" name="direccion" placeholder="Direccion">
+          <input type="text" class="fadeIn third" name="cp" placeholder="Codigo Postal">
 
-        <label for="password">Password</label>
-        <input type="password" name="password" placeholder="Password" required="required"><br>
+          <input type="submit" class="fadeIn fourth" value="Registrarse">
+        </form>
 
-        <label for="telefono">Telefono</label>
-        <input type="text" name="telefono" placeholder="Telefono"><br>
+        <div id="formFooter">
+          <a class="underlineHover" href="controlador.php">Login</a>
+        </div>
 
-        <label for="direccion">Direccion</label>
-        <input type="text" name="direccion" placeholder="Direccion"><br>
-
-        <label for="cp">Codigo Postal</label>
-        <input type="text" name="cp" placeholder="CodigoPostal"><br>
-
-        <button type="submit" class="btn btn-primary btn-block btn-large">Registrar</button>  
-     </form>  
-  </div>
-
+      </div>
+	</div>
 </body>
 </html>
