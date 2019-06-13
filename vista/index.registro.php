@@ -29,6 +29,7 @@
 
         <div id="formFooter">
           <a class="underlineHover" href="controlador.php">Login</a>
+          <a class="underlineHover" href="../Remo/index.php">Inicio</a>
         </div>
 
       </div>
