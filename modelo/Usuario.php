@@ -71,10 +71,11 @@
                                 ":password" => $password]);
         
                 $resultado = $db->getRow();
-                session_start();
+                
             
                 if ($resultado!== false) {
 
+                    session_start();
                     //Usuario normal de la aplicacion
                     if($nombre !== "admin"){
                         $_SESSION["nombre"]=$nombre;
@@ -87,11 +88,9 @@
                         header("Location: controlador.php?mod=producto&ope=index");
                     }
                     
-                    
                 }else{
                 //Redireccion al formulario de logue si no concuerda los datos con la bd
                     require_once "vista/index.login.php";
-                    echo "El nombre o la contraseña no es correcta";
                 
                 }
             } else{

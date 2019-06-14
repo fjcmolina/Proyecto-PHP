@@ -67,7 +67,6 @@
                             ":precio"=>$precio,
                             ":idProducto"=> $idProducto,
                             ":idUsuario"=> $idUsuario]);
-            var_dump($db);
         }
 
 
