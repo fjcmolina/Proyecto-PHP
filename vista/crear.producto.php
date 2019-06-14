@@ -2,31 +2,42 @@
 <html>
 <head>
    
-    <title> Nuevo Producto</title>
-    <link rel="stylesheet" type="text/css" href="css/estilo_formulario.css">
+    <title>Nuevo Producto</title>
+	<link href="css/form.css" rel="stylesheet">
+	<link href="css/business-casual.min.css" rel="stylesheet">
 
-    
+	<!-- Custom fonts for this template -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+
+	<!-- Custom styles for this template -->
+	<link href="css/business-casual.min.css" rel="stylesheet">
 </head>
 <body>
 
-    <div class="login">
+    <div class="wrapper fadeInDown">
+		
+		<div id="formContent">
 
-        <h1>Crear producto</h1>
+			<h1>Crear Producto</h1>
+			
+			<form action="controlador.php" method="GET">
 
-        <form action="controlador.php" method="get">
+                <input type="hidden" name="mod" value="producto" />
+                <input type="hidden" name="ope" value="crear" />
 
-            <input type="hidden" name="mod" value="producto" />
-            <input type="hidden" name="ope" value="crear" />
+				<input type="text" class="fadeIn second" name="nombre" placeholder="Nombre Producto" >
+				<input type="text" class="fadeIn third" name="precio" placeholder="Precio" >
 
-        
-            <label for="nombre">Nombre:</label>
-            <input id="nombre" name="nombre" type="text" value="" required />
-            <br>
-            <label for="precio">Precio:</label>
-            <input id="precio" name="precio" type="text" value="" />
-            <br>
-            <input type="submit" class="btn btn-primary btn-block btn-large" value="Crear producto"/>
-        </form>
-    </div>
+				<input type="submit" class="fadeIn fourth" value="Crear Prodcuto">
+			</form>
+
+			<div id="formFooter">
+				<a class="underlineHover" href="controlador.php">Panel de Administracion</a>
+			</div>
+
+		</div>
+	</div>
+
 </body>
 </html>
