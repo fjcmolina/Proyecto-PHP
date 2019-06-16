@@ -5,14 +5,19 @@ una vista principal con un video y un iframe de facebook para poder ver todas la
 cuenta de facebook. Ademas podemos ver cuatro apartados en la cabecera: inicio(vista principal), conocenos(informacion del club),
 tienda(encotraremos un logeo para un tienda con dos tipos de usuarios) y galeria(pequeña galeria de fotos).
 
-#INICIO
+# INICIO
 <img src="capturas/inicio.PNG">
 
-#CONOCENOS
+# CONOCENOS
+
 <img src="capturas/conocenos.PNG">
-#TIENDA
+
+# TIENDA
+
 <img src="capturas/tienda.PNG">
-#GALERIA
+
+# GALERIA
+
 <img src="capturas/galeria.PNG">
 
 Enlace del proyecto colgado en el servidor 
