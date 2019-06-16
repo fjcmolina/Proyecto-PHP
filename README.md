@@ -6,7 +6,7 @@ cuenta de facebook. Ademas podemos ver cuatro apartados en la cabecera: inicio(v
 tienda(encotraremos un logeo para un tienda con dos tipos de usuarios) y galeria(pequeña galeria de fotos).
 
 
-<img src="capturas/inicio.png"></img>
+<img src="capturas/inicio.PNG">
 
 Enlace del proyecto colgado en el servidor 
 
