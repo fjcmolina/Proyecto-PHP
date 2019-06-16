@@ -37,8 +37,13 @@ En este apartado vemos una pequeña galeria de imagenes redimensionadas formando
 <img src="capturas/galeria.PNG">
 
 
+# Herramientas utilizadas
 
-Enlace del proyecto colgado en el servidor 
+-Como lenguaje de programacion he utilizado PHP utilizando el modelo MVC
+- 
+
+
+Enlace del proyecto desplegado con infinity free:
 
 http://clubremo.epizy.com
 
