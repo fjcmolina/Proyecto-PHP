@@ -23,8 +23,10 @@ un apartado para crear nuestra cuenta.
 Hay dos tipos de usuarios:
   -El usuario administrador que es el que puede realizar acciones como crear un producto, editarlo
   o borrarlo de la tienda.(Usuario: admin   Contraseña:admin)
-  ## Vista Administrador
+  Vista Administrador:
+  
   <img src"capturas/admin.PNG">
+  
   -El usuario normal que se puede crear su cuenta y tiene una vista de todos los productos que puede añadir a su carrito.
 
 <img src="capturas/tienda.PNG">
