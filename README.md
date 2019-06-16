@@ -39,11 +39,13 @@ En este apartado vemos una pequeña galeria de imagenes redimensionadas formando
 
 # Herramientas utilizadas
 
--Como lenguaje de programacion he utilizado PHP utilizando el modelo MVC
-- 
+- Como lenguaje de programacion he utilizado PHP utilizando el modelo MVC
+- Para la realizacion de la vista de la pagina y el resposive he utilizado boostrap
+- Para la paginacion he utilizado datatable,js y boostrap.
+- Para el despliegue de la web he utilizado infinity free
 
 
-Enlace del proyecto desplegado con infinity free:
+# Enlace del proyecto desplegado con infinity free:
 
 http://clubremo.epizy.com
 
